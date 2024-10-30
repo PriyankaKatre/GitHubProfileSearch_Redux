@@ -7,20 +7,21 @@ import GithubSearchApp from "./components/GithubSearchApp";
 let App = () => {
 
     return (
-        <React.Fragment>
-            <nav className="navbar navbar-dark bg-dark navbar-expand-sm">
-                <div className="container">
-                    <a href="javascript;" className="navbar-brand">React Github Search with REDUX</a>
-                </div>
-            </nav>
+      <React.Fragment>
+        <nav className="navbar navbar-dark bg-dark navbar-expand-sm">
+          <div className="container">
+            <a href="/" className="navbar-brand">
+              React Github Search with REDUX
+            </a>
+          </div>
+        </nav>
 
-            <Provider store={store}>
-                <GithubSearchApp/>
-            </Provider>
+        <Provider store={store}>
+          <GithubSearchApp />
+        </Provider>
 
-
-            <div style={{marginBottom : '150px'}}/>
-        </React.Fragment>
+        <div style={{ marginBottom: "150px" }} />
+      </React.Fragment>
     );
 };
 
